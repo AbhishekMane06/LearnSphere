@@ -10,18 +10,16 @@
 
 ## 🚀 Live Demo
 
-🌐 [Click here to explore the website](https://learn-sphere-two.vercel.app/)
+🌐 [LearnSphere](https://learn-sphere-two.vercel.app/)
 
 ---
 
 ## ✨ Features
 
 - 📚 Clean and responsive multi-page website
-- 👨‍🏫 Instructor section to attract course creators
 - 🧠 Course detail and category pages
 - 🌓 Light/Dark mode ready (optional extension)
 - 📩 Contact, Login, and Signup pages
-- 💬 Testimonials & Reviews section
 - 📱 Fully mobile responsive
 
 ---
