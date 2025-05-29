@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+
+    <link rel="stylesheet" class="js-color-style" href="css/colors/colors1.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Courses</title>
+  </head>
+  <body>
+
+    
+    <!-- page loader start -->
+     <div class="page-loader js-page-loader">
+      <div></div>
+     </div>
+    <!-- page loader end -->
+     
+    <!-- main wrapper start -->
+    <div class="main-wrapper">
+      <!-- header start -->
+      <header class="header">
+        <div class="container">
+          <div
+            class="header-main d-flex justify-content-between align-items-center"
+          >
+            <div class="header-logo">
+              <a href="index.html"><span>Learn</span>Sphere</a>
+            </div>
+            <button
+              type="button"
+              class="header-hamburger-btn js-header-menu-toggler"
+            >
+              <span></span>
+            </button>
+            <div class="header-backdrop js-header-backdrop"></div>
+            <nav class="header-menu js-header-menu">
+              <button
+                class="header-close-btn js-header-menu-toggler"
+                type="button"
+              >
+                <i class="fas fa-times"></i>
+              </button>
+              <ul class="menu">
+                <li class="menu-item"><a href="index.html">Home</a></li>
+                <li class="menu-item menu-item-children">
+                  <a href="" class="js-toggle-sub-menu"
+                    >Courses <i class="fas fa-chevron-down"></i
+                  ></a>
+                  <ul class="sub-menu js-sub-menu">
+                    <li class="sub-menu-item">
+                      <a href="courses.html">Course</a>
+                    </li>
+                    <li class="sub-menu-item">
+                      <a href="course-detail.html">Course Detail</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item menu-item-children">
+                  <a href="" class="js-toggle-sub-menu"
+                    >Pages<i class="fas fa-chevron-down"></i
+                  ></a>
+                  <ul class="sub-menu js-sub-menu">
+                    <li class="sub-menu-item">
+                      <a href="log-in.html">Log In</a>
+                    </li>
+                    <li class="sub-menu-item">
+                      <a href="sign-up.html">Sign Up</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item"><a href="contact.html">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <!-- header end -->
+
+      <!-- BreadCrumb Start -->
+      <div class="breadcrumb-nav">
+        <div class="container">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Courses
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+      <!-- BreadCrumb End -->
+
+      <!-- Courses -->
+      <section class="courses-section section-padding">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <div class="section-title text-center mb-4">
+                <h2 class="title">COURSES</h2>
+                <p class="sub-title">Find The Right Course For You</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <nav>
+                <div
+                  class="nav nav-tabs border-0 justify-content-center mb-4"
+                  id="nav-tab"
+                  role="tablist"
+                >
+                  <button
+                    class="nav-link active"
+                    id="computer-science-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#computer-science"
+                    type="button"
+                    role="tab"
+                    aria-controls="computer-science"
+                    aria-selected="false"
+                  >
+                    Computer Science
+                  </button>
+                  <button
+                    class="nav-link"
+                    id="data-science-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#data-science"
+                    type="button"
+                    role="tab"
+                    aria-controls="data-science"
+                    aria-selected="true"
+                  >
+                    Data Science
+                  </button>
+                  <button
+                    class="nav-link"
+                    id="information-technology-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#information-technology"
+                    type="button"
+                    role="tab"
+                    aria-controls="information-technology"
+                    aria-selected="false"
+                  >
+                    Information Technology
+                  </button>
+                  <button
+                    class="nav-link"
+                    id="business-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#business"
+                    type="button"
+                    role="tab"
+                    aria-controls="business"
+                    aria-selected="false"
+                  >
+                    Business
+                  </button>
+                  <button
+                    class="nav-link"
+                    id="Language-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#language"
+                    type="button"
+                    role="tab"
+                    aria-controls="language"
+                    aria-selected="false"
+                  >
+                    Language Learning
+                  </button>
+                  <button
+                    class="nav-link"
+                    id="fitness-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#fitness"
+                    type="button"
+                    role="tab"
+                    aria-controls="fitness"
+                    aria-selected="false" 
+                  >
+                    Fitness
+                  </button>
+                </div>
+              </nav>
+              <div class="tab-content" id="nav-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="computer-science"
+                  role="tabpanel"
+                  aria-labelledby="computer-science-tab"
+                >
+                  <div class="row justify-content-center">
+                    <!--computer-science -->
+                    <div class="col-md-6 col-lg-3">
+                      <div class="courses-item">
+                        <a href="course-detail.html" class="link">
+                          <div class="courses-item-inner">
+                            <div class="img-box">
+                              <img 
+                                src="img/courses/Computer-Science/1.jpg"
+                                alt="" 
+                              />
+                            </div>
+                            <h3 class="title">HTML, CSS, and JavaScript</h3>
+                            <div class="instructor">
+                              <img src="img/instructor/1.png" alt="" />
+                              <span class="instructor-name"
+                                >Rajesh Digvijay</span
+                              >
+                            </div>
+                            <div class="rating">
+                              <span class="average-rating">(4.5)</span>
+                              <span class="average-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                              </span>
+                              <span class="reviews">(215)</span>
+                            </div>
+                            <div class="price">₹ 450</div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <!-- end -->
+                    <div class="col-md-6 col-lg-3">
+                      <div class="courses-item">
+                        <a href="course-detail.html" class="link">
+                          <div class="courses-item-inner">
+                            <div class="img-box">
+                              <img
+                                src="img/courses/Computer-Science/2.jpeg"
+                                alt=""
+                              />
+                            </div>
+                            <h3 class="title">
+                              Data Structures and Algorithms
+                            </h3>
+                            <div class="instructor">
+                              <img src="img/instructor/1.png" alt="" />
+                              <span class="instructor-name">Neha Sharma</span>
+                            </div>
+                            <div class="rating">
+                              <span class="average-rating">(4)</span>
+                              <span class="average-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                              </span>
+                              <span class="reviews">(215)</span>
+                            </div>
+                            <div class="price">₹ 350</div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <!-- end -->
+                    <div class="col-md-6 col-lg-3">
+                      <div class="courses-item">
+                        <a href="course-detail.html" class="link">
+                          <div class="courses-item-inner">
+                            <div class="img-box">
+                              <img
+                                src="img/courses/Computer-Science/3.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <h3 class="title">Advanced Javascript</h3>
+                            <div class="instructor">
+                              <img src="img/instructor/1.png" alt="" />
+                              <span class="instructor-name"
+                                >Rajesh Digvijay</span
+                              >
+                            </div>
+                            <div class="rating">
+                              <span class="average-rating">(4.5)</span>
+                              <span class="average-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                              </span>
+                              <span class="reviews">(215)</span>
+                            </div>
+                            <div class="price">₹ 500</div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <!-- end -->
+                    <div class="col-md-6 col-lg-3">
+                      <div class="courses-item">
+                        <a href="course-detail.html" class="link">
+                          <div class="courses-item-inner">
+                            <div class="img-box">
+                              <img
+                                src="img/courses/Computer-Science/4.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <h3 class="title">SQL and NoSQL</h3>
+                            <div class="instructor">
+                              <img src="img/instructor/1.png" alt="" />
+                              <span class="instructor-name">Vikram Joshi</span>
+                            </div>
+                            <div class="rating">
+                              <span class="average-rating">(4)</span>
+                              <span class="average-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                              </span>
+                              <span class="reviews">(215)</span>
+                            </div>
+                            <div class="price">₹ 400</div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <!-- end -->
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="data-science"
+                  role="tabpanel"
+                  aria-labelledby="data-science-tab"
+                >
+                  <div class="row justify-content-center">
+                    <!-- Data-science -->
+                    <div class="col-md-6 col-lg-3">
+                      <div class="courses-item">
+                        <a href="course-detail.html" class="link">
+                          <div class="courses-item-inner">
+                            <div class="img-box">
+                              <img src="img/courses/Data-Science/1.jpg" alt="" />
+                            </div>
+                            <h3 class="title">Data Science with Python</h3>
+                            <div class="instructor">
+                              <img src="img/instructor/1.png" alt="" />
+                              <span class="instructor-name">Rajesh Kumar</span>
+                            </div>
+                            <div class="rating">
+                              <span class="average-rating">(4.5)</span>
+                              <span class="average-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                              </span>
+                              <span class="reviews">(215)</span>
+                            </div>
+                            <div class="price">₹ 450</div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <!-- end -->
+                    <div class="col-md-6 col-lg-3">
+                      <div class="courses-item">
+                        <a href="course-detail.html" class="link">
+                          <div class="courses-item-inner">
+                            <div class="img-box">
+                              <img
+                                src="img/courses/Data-Science/2.jpeg"
+                                alt=""
+                              />
+                            </div>
+                            <h3 class="title">Statistics for Data Science</h3>
+                            <div class="instructor">
+                              <img src="img/instructor/1.png" alt="" />
+                              <span class="instructor-name">Neha Sharma</span>
+                            </div>
+                            <div class="rating">
+                              <span class="average-rating">(4)</span>
+                              <span class="average-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                              </span>
+                              <span class="reviews">(215)</span>
+                            </div>
+                            <div class="price">₹ 350</div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <!-- end -->
+                    <div class="col-md-6 col-lg-3">
+                      <div class="courses-item">
+                        <a href="course-detail.html" class="link">
+                          <div class="courses-item-inner">
+                            <div class="img-box">
+                              <img src="img/courses/Data-Science/3.jpeg" alt="" />
+                            </div>
+                            <h3 class="title">Machine Learning Foundations</h3>
+                            <div class="instructor">
+                              <img src="img/instructor/1.png" alt="" />
+                              <span class="instructor-name">Priya Mehta</span>
+                            </div>
+                            <div class="rating">
+                              <span class="average-rating">(4)</span>
+                              <span class="average-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                              </span>
+                              <span class="reviews">(215)</span>
+                            </div>
+                            <div class="price">₹ 500</div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <!-- end -->
+                    <div class="col-md-6 col-lg-3">
+                      <div class="courses-item">
+                        <a href="course-detail.html" class="link">
+                          <div class="courses-item-inner">
+                            <div class="img-box">
+                              <img src="img/courses/Data-Science/4.jpeg" alt="" />
+                            </div>
+                            <h3 class="title">Big Data Technologies</h3>
+                            <div class="instructor">
+                              <img src="img/instructor/1.png" alt="" />
+                              <span class="instructor-name">Vikram Joshi</span>
+                            </div>
+                            <div class="rating">
+                              <span class="average-rating">(4)</span>
+                              <span class="average-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                              </span>
+                              <span class="reviews">(215)</span>
+                            </div>
+                            <div class="price">₹ 500</div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <!-- end -->
+
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="information-technology"
+                  role="tabpanel"
+                  aria-labelledby="information-technology-tab"
+                >
+                  <div class="row justify-content-center">
+                    <!-- information-technology -->
+                    <div class="col-md-6 col-lg-3">
+                      <div class="courses-item">
+                        <a href="course-detail.html" class="link">
+                          <div class="courses-item-inner">
+                            <div class="img-box">
+                              <img src="img/courses/Information Technology/1.jpeg" alt="" />
+                            </div>
+                            <h3 class="title">Cloud Computing Essentials</h3>
+                            <div class="instructor">
+                              <img src="img/instructor/1.png" alt="" />
+                              <span class="instructor-name">Amit Singh</span>
+                            </div>
+                            <div class="rating">
+                              <span class="average-rating">(4.5)</span>
+                              <span class="average-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                              </span>
+                              <span class="reviews">(215)</span>
+                            </div>
+                            <div class="price">₹ 450</div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <!-- end -->
+                    <div class="col-md-6 col-lg-3">
+                      <div class="courses-item">
+                        <a href="course-detail.html" class="link">
+                          <div class="courses-item-inner">
+                            <div class="img-box">
+                              <img src="img/courses/Information Technology/2.jpeg" alt="" />
+                            </div>
+                            <h3 class="title">Cybersecurity Fundamentals</h3>
+                            <div class="instructor">
+                              <img src="img/instructor/1.png" alt="" />
+                              <span class="instructor-name">Priya Mehta</span>
+                            </div>
+                            <div class="rating">
+                              <span class="average-rating">(4)</span>
+                              <span class="average-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                              </span>
+                              <span class="reviews">(215)</span>
+                            </div>
+                            <div class="price">₹ 350</div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <!-- end -->
+                    <div class="col-md-6 col-lg-3">
+                      <div class="courses-item">
+                        <a href="course-detail.html" class="link">
+                          <div class="courses-item-inner">
+                            <div class="img-box">
+                              <img src="img/courses/Information Technology/3.jpeg" alt="" />
+                            </div>
+                            <h3 class="title">Network Fundamentals</h3>
+                            <div class="instructor">
+                              <img src="img/instructor/1.png" alt="" />
+                              <span class="instructor-name">Neha Sharma</span>
+                            </div>
+                            <div class="rating">
+                              <span class="average-rating">(4)</span>
+                              <span class="average-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                              </span>
+                              <span class="reviews">(215)</span>
+                            </div>
+                            <div class="price">₹ 350</div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <!-- end -->
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="business"
+                  role="tabpanel"
+                  aria-labelledby="business-tab"
+                >
+                  <div class="row justify-content-center">
+                    <!--Business -->
+
+                    <div class="col-md-6 col-lg-3">
+                      <div class="courses-item">
+                        <a href="course-detail.html" class="link">
+                          <div class="courses-item-inner">
+                            <div class="img-box">
+                              <img src="img/courses/Business/1.jpeg" alt="" />
+                            </div>
+                            <h3 class="title">Entrepreneurship Essentials</h3>
+                            <div class="instructor">
+                              <img src="img/instructor/1.png" alt="" />
+                              <span class="instructor-name">Priya Mehta</span>
+                            </div>
+                            <div class="rating">
+                              <span class="average-rating">(4)</span>
+                              <span class="average-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                              </span>
+                              <span class="reviews">(215)</span>
+                            </div>
+                            <div class="price">₹ 350</div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <!-- end -->
+
+                    <div class="col-md-6 col-lg-3">
+                      <div class="courses-item">
+                        <a href="course-detail.html" class="link">
+                          <div class="courses-item-inner">
+                            <div class="img-box">
+                              <img src="img/courses/Business/2.jpeg" alt="" />
+                            </div>
+                            <h3 class="title">
+                              Project Management Fundamentals
+                            </h3>
+                            <div class="instructor">
+                              <img src="img/instructor/1.png" alt="" />
+                              <span class="instructor-name">Vikram Joshi</span>
+                            </div>
+                            <div class="rating">
+                              <span class="average-rating">(4)</span>
+                              <span class="average-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                              </span>
+                              <span class="reviews">(215)</span>
+                            </div>
+                            <div class="price">₹ 350</div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <!-- end -->
+
+                    <div class="col-md-6 col-lg-3">
+                      <div class="courses-item">
+                        <a href="course-detail.html" class="link">
+                          <div class="courses-item-inner">
+                            <div class="img-box">
+                              <img src="img/courses/Business/3.jpeg" alt="" />
+                            </div>
+                            <h3 class="title">Business Communication Skills</h3>
+                            <div class="instructor">
+                              <img src="img/instructor/1.png" alt="" />
+                              <span class="instructor-name">Neha Sharma</span>
+                            </div>
+                            <div class="rating">
+                              <span class="average-rating">(4)</span>
+                              <span class="average-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                              </span>
+                              <span class="reviews">(215)</span>
+                            </div>
+                            <div class="price">₹ 350</div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <!-- end -->
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="language"
+                  role="tabpanel"
+                  aria-labelledby="language-tab"
+                >
+                  <div class="row justify-content-center">
+                    <div class="col-md-6 col-lg-3">
+                      <div class="courses-item">
+                        <a href="course-detail.html" class="link">
+                          <div class="courses-item-inner">
+                            <div class="img-box">
+                              <img src="img/courses/Language/1.jpeg" alt="" />
+                            </div>
+                            <h3 class="title">Spanish for Travelers</h3>
+                            <div class="instructor">
+                              <img src="img/instructor/1.png" alt="" />
+                              <span class="instructor-name">Neha Sharma</span>
+                            </div>
+                            <div class="rating">
+                              <span class="average-rating">(4.5)</span>
+                              <span class="average-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                              </span>
+                              <span class="reviews">(145)</span>
+                            </div>
+                            <div class="price">₹ 350</div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <!-- end -->
+
+                    <div class="col-md-6 col-lg-3">
+                      <div class="courses-item">
+                        <a href="course-detail.html" class="link">
+                          <div class="courses-item-inner">
+                            <div class="img-box">
+                              <img src="img/courses/Language/2.jpeg" alt="" />
+                            </div>
+                            <h3 class="title">Mandarin Chinese</h3>
+                            <div class="instructor">
+                              <img src="img/instructor/1.png" alt="" />
+                              <span class="instructor-name">Neha Sharma</span>
+                            </div>
+                            <div class="rating">
+                              <span class="average-rating">(4)</span>
+                              <span class="average-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                              </span>
+                              <span class="reviews">(125)</span>
+                            </div>
+                            <div class="price">₹ 350</div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <!-- end -->
+
+                    <div class="col-md-6 col-lg-3">
+                      <div class="courses-item">
+                        <a href="course-detail.html" class="link">
+                          <div class="courses-item-inner">
+                            <div class="img-box">
+                              <img src="img/courses/Language/3.jpeg" alt="" />
+                            </div>
+                            <h3 class="title">French Language</h3>
+                            <div class="instructor">
+                              <img src="img/instructor/1.png" alt="" />
+                              <span class="instructor-name">Amit Singh</span>
+                            </div>
+                            <div class="rating">
+                              <span class="average-rating">(4)</span>
+                              <span class="average-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                              </span>
+                              <span class="reviews">(145)</span>
+                            </div>
+                            <div class="price">₹ 350</div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <!-- end -->
+
+                    <div class="col-md-6 col-lg-3">
+                      <div class="courses-item">
+                        <a href="course-detail.html" class="link">
+                          <div class="courses-item-inner">
+                            <div class="img-box">
+                              <img src="img/courses/Language/4.jpeg" alt="" />
+                            </div>
+                            <h3 class="title">German Language</h3>
+                            <div class="instructor">
+                              <img src="img/instructor/1.png" alt="" />
+                              <span class="instructor-name">Sneha Reddy</span>
+                            </div>
+                            <div class="rating">
+                              <span class="average-rating">(4)</span>
+                              <span class="average-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                              </span>
+                              <span class="reviews">(200)</span>
+                            </div>
+                            <div class="price">₹ 350</div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <!-- end -->
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="fitness"
+                  role="tabpanel"
+                  aria-labelledby="fitness-tab" 
+                >
+                  <div class="row justify-content-center">
+                    <div class="col-md-6 col-lg-3">
+                      <div class="courses-item">
+                        <a href="course-detail.html" class="link">
+                          <div class="courses-item-inner">
+                            <div class="img-box">
+                              <img src="img/courses/fitness/1.jpeg" alt="" />
+                            </div>
+                            <h3 class="title">Martial Arts Fitness</h3>
+                            <div class="instructor">
+                              <img src="img/instructor/1.png" alt="" />
+                              <span class="instructor-name"
+                                >Vikram Choudhary</span
+                              >
+                            </div>
+                            <div class="rating">
+                              <span class="average-rating">(4.5)</span>
+                              <span class="average-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                              </span>
+                              <span class="reviews">(145)</span>
+                            </div>
+                            <div class="price">₹ 350</div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <!-- end -->
+
+                    <div class="col-md-6 col-lg-3">
+                      <div class="courses-item">
+                        <a href="course-detail.html" class="link">
+                          <div class="courses-item-inner">
+                            <div class="img-box">
+                              <img src="img/courses/fitness/2.jpeg" alt="" />
+                            </div>
+                            <h3 class="title">HIIT Workouts</h3>
+                            <div class="instructor">
+                              <img src="img/instructor/1.png" alt="" />
+                              <span class="instructor-name">Amit Mehta</span>
+                            </div>
+                            <div class="rating">
+                              <span class="average-rating">(4)</span>
+                              <span class="average-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                              </span>
+                              <span class="reviews">(125)</span>
+                            </div>
+                            <div class="price">₹ 350</div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <!-- end -->
+
+                    <div class="col-md-6 col-lg-3">
+                      <div class="courses-item">
+                        <a href="course-detail.html" class="link">
+                          <div class="courses-item-inner">
+                            <div class="img-box">
+                              <img src="img/courses/fitness/3.jpeg" alt="" />
+                            </div>
+                            <h3 class="title">Nutrition for Fitness</h3>
+                            <div class="instructor">
+                              <img src="img/instructor/1.png" alt="" />
+                              <span class="instructor-name">Zack Reily</span>
+                            </div>
+                            <div class="rating">
+                              <span class="average-rating">(4)</span>
+                              <span class="average-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                              </span>
+                              <span class="reviews">(145)</span>
+                            </div>
+                            <div class="price">₹ 350</div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <!-- end -->
+
+                    <div class="col-md-6 col-lg-3">
+                      <div class="courses-item">
+                        <a href="course-detail.html" class="link">
+                          <div class="courses-item-inner">
+                            <div class="img-box">
+                              <img src="img/courses/fitness/4.jpeg" alt="" />
+                            </div>
+                            <h3 class="title">Dance Fitness: Zumba</h3>
+                            <div class="instructor">
+                              <img src="img/instructor/1.png" alt="" />
+                              <span class="instructor-name">Meera Joshi</span>
+                            </div>
+                            <div class="rating">
+                              <span class="average-rating">(4)</span>
+                              <span class="average-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                              </span>
+                              <span class="reviews">(200)</span>
+                            </div>
+                            <div class="price">₹ 350</div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <!-- end -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 mt-3">
+              <!-- paging -->
+
+              <!-- <nav aria-label="Page navigation">
+  <ul class="pagination justify-content-center">
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item active"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">4</a></li>
+    <li class="page-item"><a class="page-link" href="#">5</a></li>
+    <li class="page-item disabled"><a class="page-link" href="#">...</a></li>
+    <li class="page-item"><a class="page-link" href="#">10</a></li>
+
+
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav> -->
+              <!-- paging end-->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Courses End -->
+
+      <!-- footer -->
+      <footer class="footer">
+        <div class="footer-top">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-lg-3">
+                <div class="footer-item">
+                  <h3>
+                    <span class="footer-logo"><span>Learn</span>Sphere</span>
+                  </h3>
+                  <ul>
+                    <li><a href="">about</a></li>
+                    <li><a href="">what we offer</a></li>
+                    <li><a href="">careers</a></li>
+                    <li><a href="">certificates</a></li>
+                    <li><a href="">blog</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-3">
+                <div class="footer-item">
+                  <h3>Learning</h3>
+                  <ul>
+                    <li><a href="">get the app</a></li>
+                    <li><a href="">testimonials</a></li>
+                    <li><a href="">pricing</a></li>
+                    <li><a href="">faq</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-3">
+                <div class="footer-item">
+                  <h3>More</h3>
+                  <ul>
+                    <li><a href="">affiliates</a></li>
+                    <li><a href="">become a course creator</a></li>
+                    <li><a href="">Training webinars</a></li>
+                    <li><a href="">free personality test</a></li>
+                    <li><a href="">help and support</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-3">
+                <div class="footer-item">
+                  <h3>Get in Touch</h3>
+                  <ul>
+                    <li>
+                      <a href=""
+                        ><i class="fab fa-facebook-f social-icon"></i
+                        >facebook</a
+                      >
+                    </li>
+                    <li>
+                      <a href=""
+                        ><i class="fab fa-instagram social-icon"></i
+                        >instagram</a
+                      >
+                    </li>
+                    <li>
+                      <a href=""
+                        ><i class="fab fa-twitter social-icon"></i>twitter</a
+                      >
+                    </li>
+                    <li>
+                      <a href=""
+                        ><i class="fab fa-youtube social-icon"></i>youtube</a
+                      >
+                    </li>
+                    <li>
+                      <a href=""
+                        ><i class="fab fa-linkedin-in social-icon"></i
+                        >linkedin</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="container">
+            <p class="m-0 py-4 text-center">
+              Copywrite &copy; 2024 LearnSphere
+            </p>
+          </div>
+        </div>
+      </footer>
+      <!-- footer end -->
+    </div>
+    <!-- main wrapper end -->
+
+    <!-- style Switcher -->
+    <div class="style-switcher js-style-switcher">
+      <div class="style-switcher-toggler js-style-switcher-toggler">
+        <i class="fas fa-cog"></i>
+      </div>
+      <h3>Style Switcher</h3>
+
+      <div class="style-switcher-item">
+        <p class="mb-2">Theme Colors</p>
+        <div class="theme-colors js-theme-colors">
+          <button
+            type="button"
+            data-js-theme-color="colors1"
+            class="js-theme-color-item color-1"
+          ></button>
+          <button
+            type="button"
+            data-js-theme-color="colors2"
+            class="js-theme-color-item color-2"
+          ></button>
+          <button
+            type="button"
+            data-js-theme-color="colors3"
+            class="js-theme-color-item color-3"
+          ></button>
+          <button
+            type="button"
+            data-js-theme-color="colors4"
+            class="js-theme-color-item color-4"
+          ></button>
+          <button
+            type="button"
+            data-js-theme-color="colors5"
+            class="js-theme-color-item color-5"
+          ></button>
+        </div>
+      </div>
+
+      <div class="style-switcher-item">
+        <div class="form-check form-switch">
+          <input
+            class="form-check-input js-dark-mode"
+            type="checkbox"
+            role="switch"
+            id="dark-mode"
+          />
+          <label class="form-check-label" for="dark-mode">Dark Mode</label>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- style Switcher end -->
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
